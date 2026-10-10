@@ -1,0 +1,1600 @@
+{
+ "files": 242,
+ "audio_minutes": 169.132925,
+ "bootstrap_unit": "group",
+ "n_groups": {
+  "tune": 28,
+  "report": 43
+ },
+ "target_cutoff": 0.1,
+ "gap_s": 2.0,
+ "label_mode": "agent_times",
+ "turns": {
+  "tune": 416,
+  "report": 787
+ },
+ "recommendation": {
+  "eot_threshold": 0.94,
+  "reachable_on_tune": true
+ },
+ "recommendations_by_target": {
+  "0.05": {
+   "eot_threshold": 0.98,
+   "reachable_on_tune": true,
+   "fcr": {
+    "point": 0.017789072426937738,
+    "lo": 0.008962868117797696,
+    "hi": 0.027379400260756193
+   },
+   "lat_p50": {
+    "point": 3.0534362919768316,
+    "lo": 2.880000000000001,
+    "hi": 3.200000000000003
+   },
+   "ter_1500": {
+    "point": 0.9469598965071151,
+    "lo": 0.9296670372321968,
+    "hi": 0.9640982103988681
+   }
+  },
+  "0.10": {
+   "eot_threshold": 0.94,
+   "reachable_on_tune": true,
+   "fcr": {
+    "point": 0.052096569250317665,
+    "lo": 0.03037592067085419,
+    "hi": 0.07703339509812178
+   },
+   "lat_p50": {
+    "point": 1.7038167290296413,
+    "lo": 1.615718800711854,
+    "hi": 1.8399999999999999
+   },
+   "ter_1500": {
+    "point": 0.628686327077748,
+    "lo": 0.581077552748571,
+    "hi": 0.6731932938338926
+   }
+  },
+  "0.20": {
+   "eot_threshold": 0.86,
+   "reachable_on_tune": true,
+   "fcr": {
+    "point": 0.11944091486658195,
+    "lo": 0.09206281460244026,
+    "hi": 0.1500663296842859
+   },
+   "lat_p50": {
+    "point": 1.053518166984432,
+    "lo": 0.9742873993379192,
+    "hi": 1.1266841250285502
+   },
+   "ter_1500": {
+    "point": 0.2741702741702742,
+    "lo": 0.22670827607268285,
+    "hi": 0.3182510526680498
+   }
+  }
+ },
+ "report_half": {
+  "recommended": {
+   "fcr": {
+    "point": 0.052096569250317665,
+    "lo": 0.03037592067085419,
+    "hi": 0.07703339509812178
+   },
+   "lat_p50": {
+    "point": 1.7038167290296413,
+    "lo": 1.615718800711854,
+    "hi": 1.8399999999999999
+   },
+   "lat_p90": {
+    "point": 3.3981496459944176,
+    "lo": 3.120000000000001,
+    "hi": 3.627579886301493
+   },
+   "ter_1500": {
+    "point": 0.628686327077748,
+    "lo": 0.581077552748571,
+    "hi": 0.6731932938338926
+   }
+  },
+  "default_0.7": {
+   "fcr": {
+    "point": 0.2617534942820839,
+    "lo": 0.21972371459219667,
+    "hi": 0.30635779788895967
+   },
+   "lat_p50": {
+    "point": 0.5600000000000005,
+    "lo": 0.4930435829842459,
+    "hi": 0.6194926608340481
+   },
+   "lat_p90": {
+    "point": 1.2962944170134136,
+    "lo": 1.2005687455898035,
+    "hi": 1.453605708996765
+   },
+   "ter_1500": {
+    "point": 0.07401032702237521,
+    "lo": 0.052728218852215285,
+    "hi": 0.09672263352723427
+   }
+  },
+  "rec_minus_default": {
+   "fcr": {
+    "metric": "fcr",
+    "point": -0.20965692503176622,
+    "lo": -0.24467984781640834,
+    "hi": -0.1758167932897974,
+    "n_boot": 1000,
+    "n_turns": 787
+   },
+   "lat_p50": {
+    "metric": "lat_p50",
+    "point": 1.1438167290296408,
+    "lo": 1.12,
+    "hi": 1.2745747361135444,
+    "n_boot": 1000,
+    "n_turns": 787
+   }
+  }
+ },
+ "curve_sim_preview": {
+  "tune": [
+   {
+    "threshold": 0.5,
+    "n_turns": 416.0,
+    "fcr": 0.6682692307692307,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.09420289855072464,
+    "ter_3000": 0.0,
+    "lat_p50": 0.45347627099603405,
+    "lat_p90": 1.3641634873035364,
+    "lat_p95": 1.6950439419881431,
+    "lat_mean": 0.6008599841150635
+   },
+   {
+    "threshold": 0.52,
+    "n_turns": 416.0,
+    "fcr": 0.6442307692307693,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.0945945945945946,
+    "ter_3000": 0.0,
+    "lat_p50": 0.45400939650833627,
+    "lat_p90": 1.3937148037082518,
+    "lat_p95": 1.7409152584741814,
+    "lat_mean": 0.6077642404258533
+   },
+   {
+    "threshold": 0.54,
+    "n_turns": 416.0,
+    "fcr": 0.6346153846153846,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.09868421052631579,
+    "ter_3000": 0.0,
+    "lat_p50": 0.4582565000071188,
+    "lat_p90": 1.4521201128079555,
+    "lat_p95": 1.7300096918879992,
+    "lat_mean": 0.618206744914979
+   },
+   {
+    "threshold": 0.56,
+    "n_turns": 416.0,
+    "fcr": 0.6201923076923077,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.10759493670886076,
+    "ter_3000": 0.0,
+    "lat_p50": 0.4729917084565374,
+    "lat_p90": 1.5239093749946913,
+    "lat_p95": 1.7845710750506265,
+    "lat_mean": 0.6599399310437659
+   },
+   {
+    "threshold": 0.58,
+    "n_turns": 416.0,
+    "fcr": 0.5913461538461539,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.1411764705882353,
+    "ter_3000": 0.0,
+    "lat_p50": 0.495335041983054,
+    "lat_p90": 1.599999999999998,
+    "lat_p95": 1.804000000000001,
+    "lat_mean": 0.6899049918405421
+   },
+   {
+    "threshold": 0.6,
+    "n_turns": 416.0,
+    "fcr": 0.5793269230769231,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.13714285714285715,
+    "ter_3000": 0.005714285714285714,
+    "lat_p50": 0.5341451250901414,
+    "lat_p90": 1.5732915499918145,
+    "lat_p95": 1.7840000000000023,
+    "lat_mean": 0.7179678388834401
+   },
+   {
+    "threshold": 0.62,
+    "n_turns": 416.0,
+    "fcr": 0.5576923076923077,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.1358695652173913,
+    "ter_3000": 0.005434782608695652,
+    "lat_p50": 0.5640663334587601,
+    "lat_p90": 1.5999999999999994,
+    "lat_p95": 1.9206383669460187,
+    "lat_mean": 0.7428726194165876
+   },
+   {
+    "threshold": 0.64,
+    "n_turns": 416.0,
+    "fcr": 0.5336538461538461,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.14948453608247422,
+    "ter_3000": 0.005154639175257732,
+    "lat_p50": 0.6400000000000002,
+    "lat_p90": 1.7225702455849394,
+    "lat_p95": 2.0799999999999987,
+    "lat_mean": 0.8054588199783075
+   },
+   {
+    "threshold": 0.66,
+    "n_turns": 416.0,
+    "fcr": 0.5120192307692307,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.1477832512315271,
+    "ter_3000": 0.0049261083743842365,
+    "lat_p50": 0.6142861670535069,
+    "lat_p90": 1.7549708665972563,
+    "lat_p95": 2.08,
+    "lat_mean": 0.8086662669950404
+   },
+   {
+    "threshold": 0.68,
+    "n_turns": 416.0,
+    "fcr": 0.49278846153846156,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.16587677725118483,
+    "ter_3000": 0.009478672985781991,
+    "lat_p50": 0.7082954999338824,
+    "lat_p90": 1.8536483340384429,
+    "lat_p95": 2.240000000000002,
+    "lat_mean": 0.8825121589672738
+   },
+   {
+    "threshold": 0.7,
+    "n_turns": 416.0,
+    "fcr": 0.46875,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.18552036199095023,
+    "ter_3000": 0.02262443438914027,
+    "lat_p50": 0.7200000000000006,
+    "lat_p90": 1.8545024999603612,
+    "lat_p95": 2.240000000000002,
+    "lat_mean": 0.9302670849502953
+   },
+   {
+    "threshold": 0.72,
+    "n_turns": 416.0,
+    "fcr": 0.4567307692307692,
+    "no_decision_rate": 0.002403846153846154,
+    "ter_1500": 0.19911504424778761,
+    "ter_3000": 0.035398230088495575,
+    "lat_p50": 0.8183227500435899,
+    "lat_p90": 1.9667031879816204,
+    "lat_p95": 2.285887031762395,
+    "lat_mean": 1.0122780995882543
+   },
+   {
+    "threshold": 0.74,
+    "n_turns": 416.0,
+    "fcr": 0.4254807692307692,
+    "no_decision_rate": 0.007211538461538462,
+    "ter_1500": 0.24267782426778242,
+    "ter_3000": 0.04602510460251046,
+    "lat_p50": 0.9024904579948618,
+    "lat_p90": 2.0588514664284876,
+    "lat_p95": 2.7292832416952604,
+    "lat_mean": 1.1208250495690302
+   },
+   {
+    "threshold": 0.76,
+    "n_turns": 416.0,
+    "fcr": 0.3894230769230769,
+    "no_decision_rate": 0.007211538461538462,
+    "ter_1500": 0.27165354330708663,
+    "ter_3000": 0.05511811023622047,
+    "lat_p50": 0.9728283960022965,
+    "lat_p90": 2.2202434874088506,
+    "lat_p95": 3.0355626727622003,
+    "lat_mean": 1.2059601312096788
+   },
+   {
+    "threshold": 0.78,
+    "n_turns": 416.0,
+    "fcr": 0.375,
+    "no_decision_rate": 0.01201923076923077,
+    "ter_1500": 0.3076923076923077,
+    "ter_3000": 0.06153846153846154,
+    "lat_p50": 1.123817646044774,
+    "lat_p90": 2.426654296152758,
+    "lat_p95": 3.364734908300217,
+    "lat_mean": 1.3172339456019038
+   },
+   {
+    "threshold": 0.8,
+    "n_turns": 416.0,
+    "fcr": 0.34134615384615385,
+    "no_decision_rate": 0.014423076923076924,
+    "ter_1500": 0.38321167883211676,
+    "ter_3000": 0.06569343065693431,
+    "lat_p50": 1.229896437544376,
+    "lat_p90": 2.5600000000000005,
+    "lat_p95": 3.5306828624755116,
+    "lat_mean": 1.4524694413532164
+   },
+   {
+    "threshold": 0.82,
+    "n_turns": 416.0,
+    "fcr": 0.30288461538461536,
+    "no_decision_rate": 0.019230769230769232,
+    "ter_1500": 0.4206896551724138,
+    "ter_3000": 0.08275862068965517,
+    "lat_p50": 1.3345420630578888,
+    "lat_p90": 2.888000000000001,
+    "lat_p95": 3.6440000000000015,
+    "lat_mean": 1.5606397720042393
+   },
+   {
+    "threshold": 0.84,
+    "n_turns": 416.0,
+    "fcr": 0.2668269230769231,
+    "no_decision_rate": 0.026442307692307692,
+    "ter_1500": 0.5147540983606558,
+    "ter_3000": 0.11147540983606558,
+    "lat_p50": 1.5199999999999996,
+    "lat_p90": 3.1199999999999983,
+    "lat_p95": 4.144000000000001,
+    "lat_mean": 1.7238581702823743
+   },
+   {
+    "threshold": 0.86,
+    "n_turns": 416.0,
+    "fcr": 0.23557692307692307,
+    "no_decision_rate": 0.04326923076923077,
+    "ter_1500": 0.5660377358490566,
+    "ter_3000": 0.14779874213836477,
+    "lat_p50": 1.6148565420671348,
+    "lat_p90": 3.322311287701877,
+    "lat_p95": 4.409055918803902,
+    "lat_mean": 1.8923614081826379
+   },
+   {
+    "threshold": 0.88,
+    "n_turns": 416.0,
+    "fcr": 0.19471153846153846,
+    "no_decision_rate": 0.06490384615384616,
+    "ter_1500": 0.6328358208955224,
+    "ter_3000": 0.19402985074626866,
+    "lat_p50": 1.7810435829591,
+    "lat_p90": 3.7790772499959915,
+    "lat_p95": 4.611150000000004,
+    "lat_mean": 2.0788759078557115
+   },
+   {
+    "threshold": 0.9,
+    "n_turns": 416.0,
+    "fcr": 0.17067307692307693,
+    "no_decision_rate": 0.10096153846153846,
+    "ter_1500": 0.7188405797101449,
+    "ter_3000": 0.2463768115942029,
+    "lat_p50": 2.014062291956506,
+    "lat_p90": 4.080000000000002,
+    "lat_p95": 4.7626000000000035,
+    "lat_mean": 2.296220312229579
+   },
+   {
+    "threshold": 0.92,
+    "n_turns": 416.0,
+    "fcr": 0.125,
+    "no_decision_rate": 0.14423076923076922,
+    "ter_1500": 0.7994505494505495,
+    "ter_3000": 0.3131868131868132,
+    "lat_p50": 2.2594623745279385,
+    "lat_p90": 4.319999999999999,
+    "lat_p95": 4.950458675050408,
+    "lat_mean": 2.5364216549219423
+   },
+   {
+    "threshold": 0.94,
+    "n_turns": 416.0,
+    "fcr": 0.09134615384615384,
+    "no_decision_rate": 0.21153846153846154,
+    "ter_1500": 0.8333333333333334,
+    "ter_3000": 0.4074074074074074,
+    "lat_p50": 2.6596893544890916,
+    "lat_p90": 4.719999999999999,
+    "lat_p95": 5.2799999999999985,
+    "lat_mean": 2.822943005574998
+   },
+   {
+    "threshold": 0.96,
+    "n_turns": 416.0,
+    "fcr": 0.055288461538461536,
+    "no_decision_rate": 0.2980769230769231,
+    "ter_1500": 0.9033078880407125,
+    "ter_3000": 0.5267175572519084,
+    "lat_p50": 3.12,
+    "lat_p90": 5.000499999999999,
+    "lat_p95": 5.623199999999997,
+    "lat_mean": 3.2122400573620093
+   },
+   {
+    "threshold": 0.98,
+    "n_turns": 416.0,
+    "fcr": 0.021634615384615384,
+    "no_decision_rate": 0.5120192307692307,
+    "ter_1500": 0.9656019656019657,
+    "ter_3000": 0.7223587223587223,
+    "lat_p50": 3.648562499999997,
+    "lat_p90": 5.6,
+    "lat_p95": 6.215999999999999,
+    "lat_mean": 3.858941855613126
+   },
+   {
+    "threshold": 0.99,
+    "n_turns": 416.0,
+    "fcr": 0.009615384615384616,
+    "no_decision_rate": 0.7043269230769231,
+    "ter_1500": 0.9854368932038835,
+    "ter_3000": 0.866504854368932,
+    "lat_p50": 4.095568083061371,
+    "lat_p90": 5.84,
+    "lat_p95": 6.240000000000002,
+    "lat_mean": 4.269422791969553
+   }
+  ],
+  "report": [
+   {
+    "threshold": 0.5,
+    "n_turns": 787.0,
+    "fcr": 0.6327827191867853,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.05536332179930796,
+    "ter_3000": 0.0,
+    "lat_p50": 0.40000000000000213,
+    "lat_p90": 1.0823893664591007,
+    "lat_p95": 1.5679999999999936,
+    "lat_mean": 0.5061082807870213
+   },
+   {
+    "threshold": 0.52,
+    "n_turns": 787.0,
+    "fcr": 0.6111817026683609,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.058823529411764705,
+    "ter_3000": 0.0032679738562091504,
+    "lat_p50": 0.414638832996133,
+    "lat_p90": 1.1265319374972025,
+    "lat_p95": 1.5935610312409687,
+    "lat_mean": 0.5371722799535484
+   },
+   {
+    "threshold": 0.54,
+    "n_turns": 787.0,
+    "fcr": 0.5933926302414231,
+    "no_decision_rate": 0.0,
+    "ter_1500": 0.06875,
+    "ter_3000": 0.003125,
+    "lat_p50": 0.4800000000000004,
+    "lat_p90": 1.2816146083069015,
+    "lat_p95": 1.6147481791332816,
+    "lat_mean": 0.5790538601805094
+   },
+   {
+    "threshold": 0.56,
+    "n_turns": 787.0,
+    "fcr": 0.5730622617534943,
+    "no_decision_rate": 0.0012706480304955528,
+    "ter_1500": 0.08928571428571429,
+    "ter_3000": 0.011904761904761904,
+    "lat_p50": 0.493861416971777,
+    "lat_p90": 1.4076146039832373,
+    "lat_p95": 1.775197812236148,
+    "lat_mean": 0.6389920034493729
+   },
+   {
+    "threshold": 0.58,
+    "n_turns": 787.0,
+    "fcr": 0.5565438373570522,
+    "no_decision_rate": 0.0012706480304955528,
+    "ter_1500": 0.10601719197707736,
+    "ter_3000": 0.014326647564469915,
+    "lat_p50": 0.5599999999999987,
+    "lat_p90": 1.5252710584569709,
+    "lat_p95": 1.8602248663371417,
+    "lat_mean": 0.6877123502419007
+   },
+   {
+    "threshold": 0.6,
+    "n_turns": 787.0,
+    "fcr": 0.5349428208386277,
+    "no_decision_rate": 0.0012706480304955528,
+    "ter_1500": 0.11202185792349727,
+    "ter_3000": 0.01366120218579235,
+    "lat_p50": 0.5741783749824392,
+    "lat_p90": 1.5999999999999996,
+    "lat_p95": 2.06842797897756,
+    "lat_mean": 0.7358702118843325
+   },
+   {
+    "threshold": 0.62,
+    "n_turns": 787.0,
+    "fcr": 0.5120711562897078,
+    "no_decision_rate": 0.0012706480304955528,
+    "ter_1500": 0.11979166666666667,
+    "ter_3000": 0.013020833333333334,
+    "lat_p50": 0.6399999999999992,
+    "lat_p90": 1.6000000000000014,
+    "lat_p95": 2.094294699849792,
+    "lat_mean": 0.7730404450828995
+   },
+   {
+    "threshold": 0.64,
+    "n_turns": 787.0,
+    "fcr": 0.49428208386277,
+    "no_decision_rate": 0.0025412960609911056,
+    "ter_1500": 0.1306532663316583,
+    "ter_3000": 0.01507537688442211,
+    "lat_p50": 0.6495666249864733,
+    "lat_p90": 1.7393678794256413,
+    "lat_p95": 2.252491229490607,
+    "lat_mean": 0.8134107164296084
+   },
+   {
+    "threshold": 0.66,
+    "n_turns": 787.0,
+    "fcr": 0.4675984752223634,
+    "no_decision_rate": 0.0025412960609911056,
+    "ter_1500": 0.1431980906921241,
+    "ter_3000": 0.021479713603818614,
+    "lat_p50": 0.7199999999999998,
+    "lat_p90": 1.794755533635616,
+    "lat_p95": 2.2712314749727924,
+    "lat_mean": 0.8638072681956366
+   },
+   {
+    "threshold": 0.68,
+    "n_turns": 787.0,
+    "fcr": 0.4434561626429479,
+    "no_decision_rate": 0.0038119440914866584,
+    "ter_1500": 0.16210045662100456,
+    "ter_3000": 0.0273972602739726,
+    "lat_p50": 0.8000000000000007,
+    "lat_p90": 1.9242277125162088,
+    "lat_p95": 2.5926460402167852,
+    "lat_mean": 0.9311674001458737
+   },
+   {
+    "threshold": 0.7,
+    "n_turns": 787.0,
+    "fcr": 0.4193138500635324,
+    "no_decision_rate": 0.005082592121982211,
+    "ter_1500": 0.175054704595186,
+    "ter_3000": 0.0350109409190372,
+    "lat_p50": 0.8000000000000043,
+    "lat_p90": 1.9360913588236996,
+    "lat_p95": 2.5954315672628576,
+    "lat_mean": 0.9826444160414105
+   },
+   {
+    "threshold": 0.72,
+    "n_turns": 787.0,
+    "fcr": 0.39644218551461247,
+    "no_decision_rate": 0.0063532401524777635,
+    "ter_1500": 0.2,
+    "ter_3000": 0.042105263157894736,
+    "lat_p50": 0.8923990000085915,
+    "lat_p90": 2.0878756504524505,
+    "lat_p95": 2.727121712588238,
+    "lat_mean": 1.0573507520316163
+   },
+   {
+    "threshold": 0.74,
+    "n_turns": 787.0,
+    "fcr": 0.3646759847522236,
+    "no_decision_rate": 0.011435832274459974,
+    "ter_1500": 0.24,
+    "ter_3000": 0.052,
+    "lat_p50": 0.9599999499999985,
+    "lat_p90": 2.2544282787237333,
+    "lat_p95": 3.039999999999999,
+    "lat_mean": 1.1637359377464913
+   },
+   {
+    "threshold": 0.76,
+    "n_turns": 787.0,
+    "fcr": 0.3443456162642948,
+    "no_decision_rate": 0.016518424396442185,
+    "ter_1500": 0.3023255813953488,
+    "ter_3000": 0.06589147286821706,
+    "lat_p50": 1.053125520467292,
+    "lat_p90": 2.53194441653788,
+    "lat_p95": 3.3299281557265203,
+    "lat_mean": 1.2987057840365084
+   },
+   {
+    "threshold": 0.78,
+    "n_turns": 787.0,
+    "fcr": 0.3189326556543837,
+    "no_decision_rate": 0.020330368487928845,
+    "ter_1500": 0.3414179104477612,
+    "ter_3000": 0.08022388059701492,
+    "lat_p50": 1.1359395830053831,
+    "lat_p90": 2.7344952289504008,
+    "lat_p95": 3.531584979223556,
+    "lat_mean": 1.400778597788299
+   },
+   {
+    "threshold": 0.8,
+    "n_turns": 787.0,
+    "fcr": 0.28716645489199494,
+    "no_decision_rate": 0.022871664548919948,
+    "ter_1500": 0.39750445632798576,
+    "ter_3000": 0.09269162210338681,
+    "lat_p50": 1.2800000000000011,
+    "lat_p90": 2.8142695000115765,
+    "lat_p95": 3.6295624999999987,
+    "lat_mean": 1.5116170702461555
+   },
+   {
+    "threshold": 0.82,
+    "n_turns": 787.0,
+    "fcr": 0.2744599745870394,
+    "no_decision_rate": 0.026683608640406607,
+    "ter_1500": 0.44833625218914186,
+    "ter_3000": 0.10683012259194395,
+    "lat_p50": 1.3767154579563083,
+    "lat_p90": 3.063400208982639,
+    "lat_p95": 3.863040062504821,
+    "lat_mean": 1.6453048594440864
+   },
+   {
+    "threshold": 0.84,
+    "n_turns": 787.0,
+    "fcr": 0.24269377382465057,
+    "no_decision_rate": 0.035578144853875476,
+    "ter_1500": 0.5,
+    "ter_3000": 0.12751677852348994,
+    "lat_p50": 1.5075405415263923,
+    "lat_p90": 3.293847936973906,
+    "lat_p95": 4.16,
+    "lat_mean": 1.7936509022019609
+   },
+   {
+    "threshold": 0.86,
+    "n_turns": 787.0,
+    "fcr": 0.20838627700127066,
+    "no_decision_rate": 0.05590851334180432,
+    "ter_1500": 0.565008025682183,
+    "ter_3000": 0.16693418940609953,
+    "lat_p50": 1.6799999999999997,
+    "lat_p90": 3.611758032809944,
+    "lat_p95": 4.33621320030978,
+    "lat_mean": 1.9481103774279913
+   },
+   {
+    "threshold": 0.88,
+    "n_turns": 787.0,
+    "fcr": 0.1880559085133418,
+    "no_decision_rate": 0.09021601016518424,
+    "ter_1500": 0.6541471048513302,
+    "ter_3000": 0.21283255086071987,
+    "lat_p50": 1.8545628330064972,
+    "lat_p90": 3.8522450586399066,
+    "lat_p95": 4.6403,
+    "lat_mean": 2.153608635913971
+   },
+   {
+    "threshold": 0.9,
+    "n_turns": 787.0,
+    "fcr": 0.1473951715374841,
+    "no_decision_rate": 0.12452350698856417,
+    "ter_1500": 0.7198211624441133,
+    "ter_3000": 0.2727272727272727,
+    "lat_p50": 2.0942025420162835,
+    "lat_p90": 4.159999999999997,
+    "lat_p95": 4.888499999999999,
+    "lat_mean": 2.379344589822115
+   },
+   {
+    "threshold": 0.92,
+    "n_turns": 787.0,
+    "fcr": 0.11181702668360864,
+    "no_decision_rate": 0.17280813214739518,
+    "ter_1500": 0.7854077253218884,
+    "ter_3000": 0.37052932761087265,
+    "lat_p50": 2.4130958749353884,
+    "lat_p90": 4.482566583407111,
+    "lat_p95": 5.139043262835126,
+    "lat_mean": 2.6479417253086
+   },
+   {
+    "threshold": 0.94,
+    "n_turns": 787.0,
+    "fcr": 0.07623888182973317,
+    "no_decision_rate": 0.24015247776365947,
+    "ter_1500": 0.8459422283356258,
+    "ter_3000": 0.4360385144429161,
+    "lat_p50": 2.719999999999999,
+    "lat_p90": 4.719999999999999,
+    "lat_p95": 5.415999999999992,
+    "lat_mean": 2.9189835379245896
+   },
+   {
+    "threshold": 0.96,
+    "n_turns": 787.0,
+    "fcr": 0.048284625158831,
+    "no_decision_rate": 0.3519695044472681,
+    "ter_1500": 0.9158878504672897,
+    "ter_3000": 0.5473965287049399,
+    "lat_p50": 3.1999999999999993,
+    "lat_p90": 5.119999999999999,
+    "lat_p95": 5.768828225445001,
+    "lat_mean": 3.3024485993299013
+   },
+   {
+    "threshold": 0.98,
+    "n_turns": 787.0,
+    "fcr": 0.015247776365946633,
+    "no_decision_rate": 0.5514612452350699,
+    "ter_1500": 0.9716129032258064,
+    "ter_3000": 0.7393548387096774,
+    "lat_p50": 3.7013125000000002,
+    "lat_p90": 5.4399999999999995,
+    "lat_p95": 6.1039999999999965,
+    "lat_mean": 3.835657689670723
+   },
+   {
+    "threshold": 0.99,
+    "n_turns": 787.0,
+    "fcr": 0.007623888182973317,
+    "no_decision_rate": 0.7344345616264295,
+    "ter_1500": 0.9871959026888605,
+    "ter_3000": 0.8693982074263764,
+    "lat_p50": 4.0866874999999965,
+    "lat_p90": 5.600000000000001,
+    "lat_p95": 6.32,
+    "lat_mean": 4.225257346701031
+   }
+  ]
+ },
+ "curve_real": {
+  "tune": [
+   {
+    "threshold": 0.6,
+    "n_turns": 416.0,
+    "fcr": 0.3894230769230769,
+    "no_decision_rate": 0.002403846153846154,
+    "ter_1500": 0.06692913385826772,
+    "ter_3000": 0.003937007874015748,
+    "lat_p50": 0.4039128330349917,
+    "lat_p90": 1.2106001580990855,
+    "lat_p95": 1.5581336624748061,
+    "lat_mean": 0.5700894007670112,
+    "fcr_words_after": 0.36778846153846156
+   },
+   {
+    "threshold": 0.7,
+    "n_turns": 416.0,
+    "fcr": 0.31490384615384615,
+    "no_decision_rate": 0.002403846153846154,
+    "ter_1500": 0.11578947368421053,
+    "ter_3000": 0.021052631578947368,
+    "lat_p50": 0.56,
+    "lat_p90": 1.5346640172442423,
+    "lat_p95": 2.0139857331421225,
+    "lat_mean": 0.754247701164553,
+    "fcr_words_after": 0.28846153846153844
+   },
+   {
+    "threshold": 0.8,
+    "n_turns": 416.0,
+    "fcr": 0.21875,
+    "no_decision_rate": 0.002403846153846154,
+    "ter_1500": 0.18153846153846154,
+    "ter_3000": 0.036923076923076927,
+    "lat_p50": 0.8000000000000003,
+    "lat_p90": 1.9286458499729637,
+    "lat_p95": 2.532407074533403,
+    "lat_mean": 1.013644267085154,
+    "fcr_words_after": 0.19471153846153846
+   },
+   {
+    "threshold": 0.86,
+    "n_turns": 416.0,
+    "fcr": 0.15144230769230768,
+    "no_decision_rate": 0.007211538461538462,
+    "ter_1500": 0.3031161473087819,
+    "ter_3000": 0.053824362606232294,
+    "lat_p50": 1.04,
+    "lat_p90": 2.3062691499954098,
+    "lat_p95": 3.0617856667917205,
+    "lat_mean": 1.2677553335504168,
+    "fcr_words_after": 0.1346153846153846
+   },
+   {
+    "threshold": 0.9,
+    "n_turns": 416.0,
+    "fcr": 0.125,
+    "no_decision_rate": 0.007211538461538462,
+    "ter_1500": 0.3626373626373626,
+    "ter_3000": 0.06868131868131869,
+    "lat_p50": 1.2799999999999987,
+    "lat_p90": 2.654790133093018,
+    "lat_p95": 3.3611749097448747,
+    "lat_mean": 1.526260030357139,
+    "fcr_words_after": 0.11057692307692307
+   },
+   {
+    "threshold": 0.94,
+    "n_turns": 416.0,
+    "fcr": 0.06490384615384616,
+    "no_decision_rate": 0.02403846153846154,
+    "ter_1500": 0.609254498714653,
+    "ter_3000": 0.15167095115681234,
+    "lat_p50": 1.6948427080363047,
+    "lat_p90": 3.293340549646877,
+    "lat_p95": 4.032179241376922,
+    "lat_mean": 1.9795863764489054,
+    "fcr_words_after": 0.05048076923076923
+   },
+   {
+    "threshold": 0.98,
+    "n_turns": 416.0,
+    "fcr": 0.036057692307692304,
+    "no_decision_rate": 0.24278846153846154,
+    "ter_1500": 0.9551122194513716,
+    "ter_3000": 0.49625935162094764,
+    "lat_p50": 2.973877875031903,
+    "lat_p90": 5.040000000000003,
+    "lat_p95": 5.52,
+    "lat_mean": 3.2360512747795713,
+    "fcr_words_after": 0.021634615384615384
+   }
+  ],
+  "report": [
+   {
+    "threshold": 0.6,
+    "n_turns": 787.0,
+    "fcr": 0.34307496823379924,
+    "no_decision_rate": 0.0012706480304955528,
+    "ter_1500": 0.05415860735009671,
+    "ter_3000": 0.0038684719535783366,
+    "lat_p50": 0.41359475008678004,
+    "lat_p90": 1.0542602250035853,
+    "lat_p95": 1.5200000000000002,
+    "lat_mean": 0.5314821822058771,
+    "fcr_words_after": 0.30495552731893266
+   },
+   {
+    "threshold": 0.7,
+    "n_turns": 787.0,
+    "fcr": 0.2617534942820839,
+    "no_decision_rate": 0.0025412960609911056,
+    "ter_1500": 0.07401032702237521,
+    "ter_3000": 0.0068846815834767644,
+    "lat_p50": 0.5600000000000005,
+    "lat_p90": 1.2962944170134136,
+    "lat_p95": 1.6940400830470033,
+    "lat_mean": 0.684664705997596,
+    "fcr_words_after": 0.22871664548919948
+   },
+   {
+    "threshold": 0.8,
+    "n_turns": 787.0,
+    "fcr": 0.16645489199491742,
+    "no_decision_rate": 0.0025412960609911056,
+    "ter_1500": 0.16310975609756098,
+    "ter_3000": 0.021341463414634148,
+    "lat_p50": 0.8140794790047217,
+    "lat_p90": 1.7649995004921222,
+    "lat_p95": 2.3056267810403366,
+    "lat_mean": 0.9769256671974177,
+    "fcr_words_after": 0.14358322744599747
+   },
+   {
+    "threshold": 0.86,
+    "n_turns": 787.0,
+    "fcr": 0.11944091486658195,
+    "no_decision_rate": 0.0038119440914866584,
+    "ter_1500": 0.2741702741702742,
+    "ter_3000": 0.03607503607503607,
+    "lat_p50": 1.053518166984432,
+    "lat_p90": 2.3199999999999994,
+    "lat_p95": 2.8198049502382037,
+    "lat_mean": 1.2537193755809848,
+    "fcr_words_after": 0.10292249047013977
+   },
+   {
+    "threshold": 0.9,
+    "n_turns": 787.0,
+    "fcr": 0.07496823379923762,
+    "no_decision_rate": 0.01397712833545108,
+    "ter_1500": 0.38873626373626374,
+    "ter_3000": 0.06593406593406594,
+    "lat_p50": 1.2957726875226951,
+    "lat_p90": 2.6741630375199055,
+    "lat_p95": 3.2901597437334713,
+    "lat_mean": 1.5142086176005574,
+    "fcr_words_after": 0.060991105463786534
+   },
+   {
+    "threshold": 0.94,
+    "n_turns": 787.0,
+    "fcr": 0.052096569250317665,
+    "no_decision_rate": 0.05082592121982211,
+    "ter_1500": 0.628686327077748,
+    "ter_3000": 0.15013404825737264,
+    "lat_p50": 1.7038167290296413,
+    "lat_p90": 3.3981496459944176,
+    "lat_p95": 4.000000000000001,
+    "lat_mean": 1.9858270079794118,
+    "fcr_words_after": 0.035578144853875476
+   },
+   {
+    "threshold": 0.98,
+    "n_turns": 787.0,
+    "fcr": 0.017789072426937738,
+    "no_decision_rate": 0.29224904701397714,
+    "ter_1500": 0.9469598965071151,
+    "ter_3000": 0.5226390685640362,
+    "lat_p50": 3.0534362919768316,
+    "lat_p90": 5.035387500000001,
+    "lat_p95": 5.52,
+    "lat_mean": 3.225854299424748,
+    "fcr_words_after": 0.005082592121982211
+   }
+  ]
+ },
+ "evidence": {
+  "0.94": [
+   {
+    "file": "report_FEE029_3",
+    "start": 6.16,
+    "end": 10.96,
+    "decision": 8.8,
+    "cutoff": true,
+    "text": "thirteen point seven. Uh-oh. Yep. What can we reduce?",
+    "said_after": "Yep. What can we reduce?"
+   },
+   {
+    "file": "report_FEE032_1",
+    "start": 7.52,
+    "end": 15.28,
+    "decision": 12.72,
+    "cutoff": true,
+    "text": "And if it's made of, like, latex, that whole idea, that's pretty cool. I'll give it a three because it ... we could have picked a lot of features that would made it really.",
+    "said_after": "because it ... we could have picked a lot of features that would made it really."
+   },
+   {
+    "file": "report_FEE049_1",
+    "start": 35.28,
+    "end": 41.52,
+    "decision": 36.653435667045414,
+    "cutoff": true,
+    "text": "Uh, no. a mousey.",
+    "said_after": "a mousey."
+   },
+   {
+    "file": "report_FEE049_2",
+    "start": 12.0,
+    "end": 19.76,
+    "decision": 16.973842666018754,
+    "cutoff": true,
+    "text": "And while you're doing that, we'll try and figure out how to hook these things on as well. It's all gonna move people walk around.",
+    "said_after": "It's all gonna move people walk around."
+   },
+   {
+    "file": "report_FEE049_3",
+    "start": 19.28,
+    "end": 26.56,
+    "decision": 22.413236000109464,
+    "cutoff": true,
+    "text": "What we will soon, unfortunately. Oh, come on.",
+    "said_after": "Oh, come on."
+   },
+   {
+    "file": "report_FEE057_0",
+    "start": 15.84,
+    "end": 22.96,
+    "decision": 19.054266417049803,
+    "cutoff": true,
+    "text": "Yeah. But I mean ... So I I haven't mentioned before about how it should be accessible to everybody. Yeah.",
+    "said_after": "about how it should be accessible to everybody. Yeah."
+   },
+   {
+    "file": "report_FEE057_2",
+    "start": 22.64,
+    "end": 29.68,
+    "decision": 25.05505758302752,
+    "cutoff": true,
+    "text": "Alright. How are our means? We needed more Play Doh colors.",
+    "said_after": "We needed more Play Doh colors."
+   },
+   {
+    "file": "report_FEE057_3",
+    "start": 13.28,
+    "end": 20.32,
+    "decision": 16.494520292035304,
+    "cutoff": true,
+    "text": "right. Right. Alright. So we've decided I'm lighting up things.",
+    "said_after": "So we've decided I'm lighting up things."
+   },
+   {
+    "file": "report_FEE058_0",
+    "start": 0.64,
+    "end": 6.16,
+    "decision": 2.734146833070554,
+    "cutoff": true,
+    "text": "He gets alright. So",
+    "said_after": ""
+   },
+   {
+    "file": "report_FEE058_0",
+    "start": 20.16,
+    "end": 26.88,
+    "decision": 25.455508082988672,
+    "cutoff": true,
+    "text": "a doctor -- Yeah. Repetitive",
+    "said_after": ""
+   },
+   {
+    "file": "report_FEE058_3",
+    "start": 20.24,
+    "end": 22.96,
+    "decision": 21.373714584042318,
+    "cutoff": true,
+    "text": "I'm project manager, of course. Yeah. --",
+    "said_after": "Yeah. --"
+   },
+   {
+    "file": "report_FEE060_0",
+    "start": 35.12,
+    "end": 37.28,
+    "decision": 36.96643491694704,
+    "cutoff": true,
+    "text": "Yeah. Oh, is regular not simple? Four",
+    "said_after": ""
+   },
+   {
+    "file": "report_FEE060_1",
+    "start": 20.72,
+    "end": 26.32,
+    "decision": 24.727192917023785,
+    "cutoff": true,
+    "text": "So it's just graph ... graphical for the pointing aspect. The infrared is, like ... that's considered ...",
+    "said_after": "infrared is, like ... that's considered ..."
+   },
+   {
+    "file": "report_FEE060_2",
+    "start": 0.32,
+    "end": 4.8,
+    "decision": 4.174637499963865,
+    "cutoff": true,
+    "text": "Okay. So we'll have a hundred percent profit then. Twelve fifty.",
+    "said_after": "Twelve fifty."
+   },
+   {
+    "file": "report_FEE060_2",
+    "start": 23.68,
+    "end": 29.44,
+    "decision": 28.334785250015557,
+    "cutoff": true,
+    "text": "yeah. That's very good because the highest you could have got is one. Does that seem right then?",
+    "said_after": "that seem right then?"
+   },
+   {
+    "file": "report_FEE060_2",
+    "start": 34.16,
+    "end": 40.72,
+    "decision": 37.93533224996645,
+    "cutoff": true,
+    "text": "One being true. So So",
+    "said_after": ""
+   },
+   {
+    "file": "report_FEE060_3",
+    "start": 26.48,
+    "end": 30.16,
+    "decision": 29.61524745891802,
+    "cutoff": true,
+    "text": "And -- Yeah. You can have some fun with the buttons. It's true. Yeah.",
+    "said_after": "Yeah."
+   },
+   {
+    "file": "report_FEE078_1",
+    "start": 30.32,
+    "end": 43.6,
+    "decision": 37.935644540935755,
+    "cutoff": true,
+    "text": "Yeah. Yeah. I think that would be really helpful. That would help us, um, you know, nab a good number of those uncertainties. Oh,",
+    "said_after": "Oh,"
+   },
+   {
+    "file": "report_FEO079_0",
+    "start": 5.44,
+    "end": 8.56,
+    "decision": 8.053913458948955,
+    "cutoff": true,
+    "text": "could be she would or should as well yeah",
+    "said_after": "yeah"
+   },
+   {
+    "file": "report_MEE009_0",
+    "start": 0.48,
+    "end": 6.16,
+    "decision": 4.8,
+    "cutoff": true,
+    "text": "You're the marketing expert. Okay. Next we have --",
+    "said_after": "Next we have --"
+   },
+   {
+    "file": "report_MEE009_0",
+    "start": 20.48,
+    "end": 27.12,
+    "decision": 25.92,
+    "cutoff": true,
+    "text": "Um, if we can look at the criteria you're gonna evaluate, and then we'll come back to the product evaluation, if that's alright. Yeah.",
+    "said_after": "Yeah."
+   },
+   {
+    "file": "report_MEE009_0",
+    "start": 32.72,
+    "end": 40.64,
+    "decision": 35.84,
+    "cutoff": true,
+    "text": "So ... yeah. I've heard ... I've seen the barcode design before. Yeah. Okay.",
+    "said_after": ""
+   },
+   {
+    "file": "report_MEE009_1",
+    "start": 8.4,
+    "end": 15.2,
+    "decision": 12.093197209062055,
+    "cutoff": true,
+    "text": "Yep. The ... it's just across there. That's it. Yep.",
+    "said_after": "Yep."
+   },
+   {
+    "file": "report_MEE009_1",
+    "start": 19.52,
+    "end": 28.48,
+    "decision": 22.973494500038214,
+    "cutoff": true,
+    "text": "Brilliantly done. Thank you. Derek, would you like to have a shot at a bit of artistry?",
+    "said_after": "you. Derek, would you like to have a shot at a bit of artistry?"
+   },
+   {
+    "file": "report_MEE031_1",
+    "start": 20.72,
+    "end": 24.48,
+    "decision": 23.134605458006263,
+    "cutoff": true,
+    "text": "Repetitive stain injury. What? Repetitive stain injury.",
+    "said_after": "Repetitive stain injury."
+   }
+  ],
+  "0.7": [
+   {
+    "file": "report_FEE029_0",
+    "start": 7.6,
+    "end": 11.44,
+    "decision": 10.56,
+    "cutoff": true,
+    "text": "we ... I think we can kind of say we addressed it with color. Okay. But --",
+    "said_after": "Okay. But --"
+   },
+   {
+    "file": "report_FEE029_0",
+    "start": 28.8,
+    "end": 31.12,
+    "decision": 30.8,
+    "cutoff": true,
+    "text": "We have five minutes left for the meeting. So --",
+    "said_after": "--"
+   },
+   {
+    "file": "report_FEE029_1",
+    "start": 13.36,
+    "end": 17.36,
+    "decision": 16.88,
+    "cutoff": true,
+    "text": "Well ... but if you could attach them to the TV, then you can do that. But ...",
+    "said_after": "that. But ..."
+   },
+   {
+    "file": "report_FEE029_3",
+    "start": 6.16,
+    "end": 10.96,
+    "decision": 7.52,
+    "cutoff": true,
+    "text": "thirteen point seven. Uh-oh. Yep. What can we reduce?",
+    "said_after": "Uh-oh. Yep. What can we reduce?"
+   },
+   {
+    "file": "report_FEE030_0",
+    "start": 33.28,
+    "end": 36.24,
+    "decision": 34.24,
+    "cutoff": true,
+    "text": "Yeah. Look at that. Showing up already.",
+    "said_after": "Showing up already."
+   },
+   {
+    "file": "report_FEE030_1",
+    "start": 0.56,
+    "end": 5.2,
+    "decision": 1.76,
+    "cutoff": true,
+    "text": "Rosartan. Well,",
+    "said_after": "Well,"
+   },
+   {
+    "file": "report_FEE030_1",
+    "start": 29.76,
+    "end": 32.72,
+    "decision": 31.36,
+    "cutoff": true,
+    "text": "Sorry about that, guys. Oh.",
+    "said_after": "Oh."
+   },
+   {
+    "file": "report_FEE030_3",
+    "start": 19.84,
+    "end": 26.72,
+    "decision": 20.64,
+    "cutoff": true,
+    "text": "Oh, oh, yes. Right. I had sort of skipped over that hoping it wouldn't get be necessary, but",
+    "said_after": "oh, yes. Right. I had sort of skipped over that hoping it wouldn't get be necessary, but"
+   },
+   {
+    "file": "report_FEE030_3",
+    "start": 30.48,
+    "end": 37.12,
+    "decision": 31.36,
+    "cutoff": true,
+    "text": "that is important. How did it get more expensive? What did you just change? It was it was thirteen, and now it's fifteen.",
+    "said_after": "How did it get more expensive? What did you just change? It was it was thirteen, and now it's fifteen."
+   },
+   {
+    "file": "report_FEE030_3",
+    "start": 40.8,
+    "end": 43.12,
+    "decision": 42.8,
+    "cutoff": true,
+    "text": "this is the one in the center that's not marked. Yeah.",
+    "said_after": "Yeah."
+   },
+   {
+    "file": "report_FEE032_0",
+    "start": 18.0,
+    "end": 22.8,
+    "decision": 20.96,
+    "cutoff": true,
+    "text": "But if you if you could scroll through the channels, and then the volume would just be ...",
+    "said_after": "and then the volume would just be ..."
+   },
+   {
+    "file": "report_FEE032_1",
+    "start": 7.52,
+    "end": 15.28,
+    "decision": 11.76,
+    "cutoff": true,
+    "text": "And if it's made of, like, latex, that whole idea, that's pretty cool. I'll give it a three because it ... we could have picked a lot of features that would made it really.",
+    "said_after": "because it ... we could have picked a lot of features that would made it really."
+   },
+   {
+    "file": "report_FEE032_1",
+    "start": 27.36,
+    "end": 36.56,
+    "decision": 27.76,
+    "cutoff": true,
+    "text": "okay. Well, there's some other ones I will address that. Yeah. Awesome. Okay. Um, we wanna know next if it's technologically innovative.",
+    "said_after": "Well, there's some other ones I will address that. Yeah. Awesome. Okay. Um, we wanna know next if it's technologically innovative."
+   },
+   {
+    "file": "report_FEE032_2",
+    "start": 8.88,
+    "end": 15.6,
+    "decision": 12.88,
+    "cutoff": true,
+    "text": "Yeah. because what makes sense otherwise because for the whole midcase material, it's only one. Yeah. It's ... I mean, it's two to make it rubber. Oh, wait. So maybe --",
+    "said_after": "one. Yeah. It's ... I mean, it's two to make it rubber. Oh, wait. So maybe --"
+   },
+   {
+    "file": "report_FEE032_3",
+    "start": 6.64,
+    "end": 11.84,
+    "decision": 9.6,
+    "cutoff": true,
+    "text": "But if I open it and then save it, it probably will be there. Oh, wait. Never mind. You can't save. It should.",
+    "said_after": "Oh, wait. Never mind. You can't save. It should."
+   },
+   {
+    "file": "report_FEE032_3",
+    "start": 29.36,
+    "end": 32.32,
+    "decision": 31.12,
+    "cutoff": true,
+    "text": "Yeah. You, like, held it down, that would be on and off.",
+    "said_after": "down, that would be on and off."
+   },
+   {
+    "file": "report_FEE049_0",
+    "start": 0.32,
+    "end": 3.2800000000000002,
+    "decision": 2.252527166972868,
+    "cutoff": true,
+    "text": "It's doing its thing. There we are.",
+    "said_after": "There we are."
+   },
+   {
+    "file": "report_FEE049_0",
+    "start": 15.12,
+    "end": 17.76,
+    "decision": 15.932155332993716,
+    "cutoff": true,
+    "text": "Yes. The instinct says true.",
+    "said_after": "instinct says true."
+   },
+   {
+    "file": "report_FEE049_1",
+    "start": 0.0,
+    "end": 8.72,
+    "decision": 5.453593209036626,
+    "cutoff": true,
+    "text": "And -- Mhmm. -- plus, I think. Well, actually, some households do have three and four TVs, and they would have a remote for each one. So --",
+    "said_after": "and they would have a remote for each one. So --"
+   },
+   {
+    "file": "report_FEE049_1",
+    "start": 12.0,
+    "end": 21.84,
+    "decision": 19.85363204195164,
+    "cutoff": true,
+    "text": "In real numbers, this ... the ninety one percent and the seventy six percent translate to in excess of the four million -- Um, yes. -- or eight million.",
+    "said_after": "Um, yes. -- or eight million."
+   },
+   {
+    "file": "report_FEE049_2",
+    "start": 12.0,
+    "end": 19.76,
+    "decision": 16.0939833750017,
+    "cutoff": true,
+    "text": "And while you're doing that, we'll try and figure out how to hook these things on as well. It's all gonna move people walk around.",
+    "said_after": "It's all gonna move people walk around."
+   },
+   {
+    "file": "report_FEE049_3",
+    "start": 11.76,
+    "end": 14.24,
+    "decision": 13.133955333032645,
+    "cutoff": true,
+    "text": "call it a or call it a banana and have it in yellow.",
+    "said_after": "call it a banana and have it in yellow."
+   },
+   {
+    "file": "report_FEE049_3",
+    "start": 19.28,
+    "end": 26.56,
+    "decision": 21.373384083039127,
+    "cutoff": true,
+    "text": "What we will soon, unfortunately. Oh, come on.",
+    "said_after": "Oh, come on."
+   },
+   {
+    "file": "report_FEE050_1",
+    "start": 13.36,
+    "end": 21.36,
+    "decision": 17.53485791699495,
+    "cutoff": true,
+    "text": "Yeah. I'm afraid I don't have that information available. Manufacturing didn't actually give ... attach any prices to any of this, I'm afraid.",
+    "said_after": "didn't actually give ... attach any prices to any of this, I'm afraid."
+   },
+   {
+    "file": "report_FEE050_2",
+    "start": 0.56,
+    "end": 3.52,
+    "decision": 2.314623708021827,
+    "cutoff": true,
+    "text": "Would you care to examine the prototypes, see how they feel in the hand?",
+    "said_after": "how they feel in the hand?"
+   }
+  ]
+ },
+ "noise": {
+  "th0.7_tir10dB": {
+   "threshold": 0.7,
+   "tir_db": 10,
+   "fcr": {
+    "point": 0.12325285895806862,
+    "lo": 0.09648705890200787,
+    "hi": 0.15259254694112329
+   },
+   "lat_p50": {
+    "point": 2.095367083535531,
+    "lo": 1.8461336508532413,
+    "hi": 2.3174593322874277
+   },
+   "ter_1500": {
+    "point": 0.6086956521739131,
+    "lo": 0.5615214252225063,
+    "hi": 0.6525896698284351
+   },
+   "no_decision_rate": {
+    "point": 0.2020330368487929,
+    "lo": 0.17307330827067668,
+    "hi": 0.2328520983492211
+   },
+   "extra_eots_per_min": 2.366540619934657,
+   "inserted_words_per_audio_min": 77.84098223723534,
+   "inserted_words_per_user_min": 175.08803537793793,
+   "vs_clean": {
+    "ter_1500": {
+     "metric": "ter_1500",
+     "point": 0.5346853251515379,
+     "lo": 0.48955705784049136,
+     "hi": 0.5780449880874645,
+     "n_boot": 1000,
+     "n_turns": 787
+    },
+    "fcr": {
+     "metric": "fcr",
+     "point": -0.13850063532401527,
+     "lo": -0.17237269201585026,
+     "hi": -0.10645853136882129,
+     "n_boot": 1000,
+     "n_turns": 787
+    }
+   }
+  },
+  "th0.7_tir0dB": {
+   "threshold": 0.7,
+   "tir_db": 0,
+   "fcr": {
+    "point": 0.10292249047013977,
+    "lo": 0.08210282432043722,
+    "hi": 0.1254843415177831
+   },
+   "lat_p50": {
+    "point": 3.05365127098281,
+    "lo": 2.814228707851202,
+    "hi": 3.2799999999999994
+   },
+   "ter_1500": {
+    "point": 0.7152974504249292,
+    "lo": 0.6725887445887446,
+    "hi": 0.7570396825396826
+   },
+   "no_decision_rate": {
+    "point": 0.3519695044472681,
+    "lo": 0.3204414823909614,
+    "hi": 0.3873213328568876
+   },
+   "extra_eots_per_min": 1.4563326891905581,
+   "inserted_words_per_audio_min": 97.04636957593583,
+   "inserted_words_per_user_min": 218.28679059864058,
+   "vs_clean": {
+    "ter_1500": {
+     "metric": "ter_1500",
+     "point": 0.641287123402554,
+     "lo": 0.5990311153113879,
+     "hi": 0.6853017733354135,
+     "n_boot": 1000,
+     "n_turns": 787
+    },
+    "fcr": {
+     "metric": "fcr",
+     "point": -0.15883100381194412,
+     "lo": -0.20101882143866875,
+     "hi": -0.11830499060400107,
+     "n_boot": 1000,
+     "n_turns": 787
+    }
+   }
+  },
+  "th0.94_tir10dB": {
+   "threshold": 0.94,
+   "tir_db": 10,
+   "fcr": {
+    "point": 0.0025412960609911056,
+    "lo": 0.0,
+    "hi": 0.006435421596711919
+   },
+   "lat_p50": {
+    "point": 4.320000000000002,
+    "lo": 4.24,
+    "hi": 4.44903984375
+   },
+   "ter_1500": {
+    "point": 0.9745222929936306,
+    "lo": 0.962912189905631,
+    "hi": 0.9860583016476553
+   },
+   "no_decision_rate": {
+    "point": 0.8996188055908514,
+    "lo": 0.8767432207856032,
+    "hi": 0.9200079681274901
+   },
+   "extra_eots_per_min": 0.02730623792232297,
+   "inserted_words_per_audio_min": 82.86533001494277,
+   "inserted_words_per_user_min": 186.3893211039227,
+   "vs_clean": {
+    "ter_1500": {
+     "metric": "ter_1500",
+     "point": 0.3458359659158826,
+     "lo": 0.2998229742373635,
+     "hi": 0.39685653456879805,
+     "n_boot": 1000,
+     "n_turns": 787
+    },
+    "fcr": {
+     "metric": "fcr",
+     "point": -0.04955527318932656,
+     "lo": -0.07554950917626974,
+     "hi": -0.026747359509796023,
+     "n_boot": 1000,
+     "n_turns": 787
+    }
+   }
+  },
+  "th0.94_tir0dB": {
+   "threshold": 0.94,
+   "tir_db": 0,
+   "fcr": {
+    "point": 0.008894536213468869,
+    "lo": 0.0024630541871921183,
+    "hi": 0.017063833697691964
+   },
+   "lat_p50": {
+    "point": 4.399999999999999,
+    "lo": 4.32,
+    "hi": 4.559999999999999
+   },
+   "ter_1500": {
+    "point": 0.9782051282051282,
+    "lo": 0.9668872063103725,
+    "hi": 0.9881434595873144
+   },
+   "no_decision_rate": {
+    "point": 0.9263024142312579,
+    "lo": 0.9060912026965326,
+    "hi": 0.9461214098464552
+   },
+   "extra_eots_per_min": 0.02730623792232297,
+   "inserted_words_per_audio_min": 100.54156802999316,
+   "inserted_words_per_user_min": 226.14855458193432,
+   "vs_clean": {
+    "ter_1500": {
+     "metric": "ter_1500",
+     "point": 0.3495188011273802,
+     "lo": 0.30409730993867506,
+     "hi": 0.396699416350774,
+     "n_boot": 1000,
+     "n_turns": 787
+    },
+    "fcr": {
+     "metric": "fcr",
+     "point": -0.043202033036848796,
+     "lo": -0.06803812976230154,
+     "hi": -0.022977702877884375,
+     "n_boot": 1000,
+     "n_turns": 787
+    }
+   }
+  }
+ },
+ "spend_usd_total": 23.142339386145792
+}

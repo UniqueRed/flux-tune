@@ -1,0 +1,26 @@
+[project]
+name = "flux-tune"
+version = "0.1.0"
+description = "Tune Deepgram Flux's end-of-turn threshold on your own conversations, with held-out evaluation."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.12",
+    "soundfile>=0.12",
+    "websockets>=13",
+    "aiohttp>=3.9",
+]
+
+[project.optional-dependencies]
+record = ["sounddevice>=0.4"]
+figures = ["matplotlib>=3.8", "markdown>=3.5"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

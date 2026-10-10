@@ -1,0 +1,35 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/raw/
+data/sim/
+data/pool/
+.cache/
+models/
+*.flac
+*.wav
+experiments/**/checkpoints/
+experiments/pilot_cache/
+*.pt
+*.onnx
+data/demo_ami/
+data/flux_cache/
+data/voice_lab/
+data/my_recordings/
+data/ami_bench/
+data/spokenwoz/
+data/excluded/
+.DS_Store
+experiments/*.log
+data/pool/
+reports/voice_lab/
+reports/*.log
+reports/*_repro/
+experiments/
+writeup/post.md
+writeup/article_for_medium.html
+# data/flux_cache/ stays ignored; the AMI benchmark's cached Flux results are force-added
+# (git add -f) so the benchmark reproduces without an API key.
+writeup/article.md
