@@ -43,7 +43,7 @@ Full numbers: [`reports/ami_bench/results.json`](reports/ami_bench/results.json)
 ## Try it
 
 ```sh
-git clone <this repo> && cd flux-tune
+git clone https://github.com/UniqueRed/flux-tune.git && cd flux-tune
 python -m venv .venv && . .venv/bin/activate
 pip install -e ".[figures,dev]"
 pytest -q
