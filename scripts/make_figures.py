@@ -333,7 +333,8 @@ def fig_cover():
         amp = np.array([np.sqrt(np.mean(seg[i:j] ** 2)) for i, j in zip(e[:-1], e[1:])])
         return np.maximum(np.clip(amp / np.percentile(amp, 97), 0, 1) ** 0.6, 0.08)
 
-    BG, FG, DIM, INKD = "#101316", "#f2f1ec", "#2a2f36", "#101316"
+    BG, FG, DIM, INKD = "#0d0e12", "#f2f1ec", "#2a2f36", "#0d0e12"
+    AGENT = "#13ef93"  # voice-AI green for the agent
     fig = plt.figure(figsize=(8, 4.5), facecolor=BG)
     ax = fig.add_axes([0, 0, 1, 1], facecolor=BG)
     ax.set_xlim(0, 16)
@@ -368,8 +369,8 @@ def fig_cover():
 
     # agent: replies on top of the caller, mid-sentence
     ax0, ay0, aw, ah = 6.4, 3.8, 8.7, 2.6
-    bubble(ax0, ay0, aw, ah, ORANGE, ax0 + aw - 0.9, -1, 5)
-    play(ax0 + 1.35, ay0 + ah / 2, 0.62, INKD, ORANGE, 6)
+    bubble(ax0, ay0, aw, ah, AGENT, ax0 + aw - 0.9, -1, 5)
+    play(ax0 + 1.35, ay0 + ah / 2, 0.62, INKD, AGENT, 6)
     amp2 = env(45.2, 47.8, 42)
     ax.add_collection(LineCollection(
         [[(u, ay0 + ah / 2 - 0.85 * v), (u, ay0 + ah / 2 + 0.85 * v)] for u, v in
